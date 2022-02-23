@@ -6,6 +6,7 @@ public class Jeu {
 
 	private String titre;
 	private Console console;
+	private Boutique boutique;
 	
 	
 	
@@ -13,6 +14,14 @@ public class Jeu {
 		this.titre = titre;
 		this.console = console;
 	}
+
+
+	public Jeu(String titre, Console console, Boutique boutique) {
+		this.titre = titre;
+		this.console = console;
+		this.boutique = boutique;
+	}
+
 
 
 
@@ -38,6 +47,15 @@ public class Jeu {
 		this.console = console;
 	}
 
+
+	public Boutique getBoutique() {
+		return boutique;
+	}
+
+
+	public void setBoutique(Boutique boutique) {
+		this.boutique = boutique;
+	}
 
 
 	@Override

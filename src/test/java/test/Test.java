@@ -2,6 +2,7 @@ package test;
 
 
 
+import metier.Boutique;
 import metier.Console;
 import metier.Jeu;
 
@@ -21,6 +22,8 @@ Jeu j2= new Jeu("Callof",c3);
 Jeu j3= new Jeu("Zelda",c2);
 Jeu j4= new Jeu("Sonic",c5);
 Jeu j5= new Jeu("MonsterHunter",c4);
+
+Boutique b = new Boutique("Fnac","Paris");
 
 	
 

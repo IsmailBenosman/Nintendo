@@ -2,11 +2,20 @@ package metier;
 
 public class Boutique {
 	
+
 	private String nom;
-	private String adresse;
-	
-	public Boutique(String nom, String adresse) {
+	private Adresse adresse;
+
+	public Boutique(Adresse adresse, String nom) {
 		this.nom = nom;
+		this.adresse = adresse;
+	}
+
+	public Adresse getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(Adresse adresse) {
 		this.adresse = adresse;
 	}
 
@@ -18,18 +27,15 @@ public class Boutique {
 		this.nom = nom;
 	}
 
-	public String getAdresse() {
-		return adresse;
-	}
-
-	public void setAdresse(String adresse) {
-		this.adresse = adresse;
-	}
-
 	@Override
 	public String toString() {
 		return "Boutique [nom=" + nom + ", adresse=" + adresse + "]";
-	} 
+	}
+
 	
+
+	
+	
+
 	
 }

@@ -2,7 +2,9 @@ package test;
 
 
 
+import metier.Adresse;
 import metier.Boutique;
+import metier.Client;
 import metier.Console;
 import metier.Jeu;
 
@@ -23,8 +25,14 @@ Jeu j3= new Jeu("Zelda",c2);
 Jeu j4= new Jeu("Sonic",c5);
 Jeu j5= new Jeu("MonsterHunter",c4);
 
-Boutique b = new Boutique("Fnac","Paris");
+Adresse a = new Adresse (26518, "Zurgn","GNEH");
+Boutique b = new Boutique (a,"Fnac");
 
+
+// int numero, String rue, String ville, String nom, Adresse address
+
+Client client1= new Client("Isma","Patron");
+Client client2= new Client("Papa","Brute");
 	
 
 	}
